@@ -46,6 +46,10 @@ export default {
 
     <div class="footer-bottom h-100">
       <button>SIGN-UP NOW!</button>
+      <div class="social">
+        <h2>FOLLOW US</h2>
+        <img src="" alt="social">
+      </div>
     </div>
 
   </footer>
@@ -83,7 +87,6 @@ export default {
             text-transform:uppercase;
             color: $secondary-color;
             margin: 0 5px;
-            border: 1px solid black;
           }
           
         }
@@ -126,6 +129,15 @@ export default {
 
     .footer-bottom{
       background-color:#303030;
+      @include d-flex;
+
+      .social{
+        @include d-flex;
+      
+        img{
+          margin: 0 10px;
+        }
+      }
     }
 
   }
