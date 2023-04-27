@@ -1,10 +1,12 @@
 
 <script>
 import {footerTop} from '../data/menu'
+import{footerMiddle} from'../data/menu'
 export default {
   data(){
     return{
       footerTop,
+      footerMiddle,
     }
   }
 }
@@ -23,7 +25,22 @@ export default {
       </ul>
     </div>
 
-    <div class="footer-middle">logo</div>
+    <div class="footer-middle">
+
+      <ul>
+        <li v-for="(link, index) in footerMiddle" :key="index">
+          <h2>{{ link.title}}</h2>
+          <a href="#">{{link.links}}</a>
+        </li>
+        
+      </ul>
+      <!-- <ul>
+        <li></li>
+      </ul>
+      <ul>
+        <li></li>
+      </ul> -->
+    </div>
 
     <div class="footer-bottom">social</div>
 
