@@ -31,21 +31,27 @@ export default {
 <style lang="scss" scoped>
   @use '../scss/general.scss' as *;
   @use '../scss/colors.scss' as *;
+  @use '../scss/font.scss' as *;
 
+  
   header{
     @include d-flex;
+    ul{
+      display:flex;
+
+      li{
+        margin:0 10px;
+        text-transform:uppercase;
+        font-weight: bold;
+
+        a{
+          color:$primary-color;
+        }
+      }
+    }
+      
+    
   }
 
-  a{
-    color:$primary-color;
-  }
-
-  li{
-    background-color:red
-  }
-
-  .container-img{
-    background-color:black
-  }
 
 </style>
