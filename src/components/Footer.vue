@@ -2,11 +2,14 @@
 <script>
 import {footerTop} from '../data/menu'
 import{footerMiddle} from'../data/menu'
+import{footerBottom} from '../data/menu'
+
 export default {
   data(){
     return{
       footerTop,
       footerMiddle,
+      footerBottom
     }
   }
 }
@@ -48,7 +51,13 @@ export default {
       <button>SIGN-UP NOW!</button>
       <div class="social">
         <h2>FOLLOW US</h2>
-        <img src="" alt="social">
+        <div>
+          <ul>
+            <li v-for="(img,index) in footerBottom" :key="index">
+              <img :src="img.img" alt="social">
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -134,6 +143,13 @@ export default {
       .social{
         @include d-flex;
       
+        ul{
+          @include d-flex;
+        }
+
+        h2{
+          color:$tertiary-color;
+        }
         img{
           margin: 0 10px;
         }

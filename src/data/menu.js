@@ -128,4 +128,22 @@ const footerMiddle = [
   },
 ]
 
-export{headerMenu,footerTop,footerMiddle}
+const footerBottom = [
+  {
+    img:'./src/assets/img/footer-facebook.png'
+  },
+  {
+    img:'./src/assets/img/footer-twitter.png'
+  },
+  {
+    img:'./src/assets/img/footer-youtube.png'
+  },
+  {
+    img:'./src/assets/img/footer-pinterest.png'
+  },
+  {
+    img:'./src/assets/img/footer-periscope.png'
+  }
+]
+
+export{headerMenu,footerTop,footerMiddle,footerBottom}
