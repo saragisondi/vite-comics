@@ -2,14 +2,22 @@
 <script>
 
 export default {
-  
+  data(){
+    return{
+    }
+  }
 }
 </script>
 
 <template>
-  <div>Main</div>
+  <main>main</main>
 </template>
 
-<style>
+<style lang="scss" scoped>
+  @use '../scss/colors.scss' as *;
 
+  main{
+    background-color:$primary-color ;
+    color:$secondary-color
+  }
 </style>
