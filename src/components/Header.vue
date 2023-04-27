@@ -21,7 +21,7 @@ export default {
   
     <ul>
       <li v-for="(link, index) in headerMenu" :key="index">
-        <a href="#">{{link.text}}</a>
+        <a href="{{link.href}}">{{link.text}}</a>
       </li>
     </ul>
   </header>
