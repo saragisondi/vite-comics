@@ -9,6 +9,6 @@ export default {
   <div>Header</div>
 </template>
 
-<style>
+<style lang="scss" scoped>
 
 </style>
