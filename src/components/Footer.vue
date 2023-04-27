@@ -14,9 +14,9 @@ export default {
   <footer>
     <div class="footer-top">
       <ul>
-        <li v-for="(link, index) in footerTop" :key="index">
+        <li class="h-150" v-for="(link, index) in footerTop" :key="index">
           <a href="#">
-            <img :src= link.img>
+            <img src="{{footerTop[index].img}}">
             <span>{{link.text}}</span>
           </a>
         </li>
@@ -42,10 +42,15 @@ export default {
       ul{
         @include d-flex;
 
-        li, span{
+        li{
           margin: 0 20px;
-          color: $secondary-color;
-          text-transform:uppercase;
+          @include d-flex;
+          
+          span{
+            text-transform:uppercase;
+            color: $secondary-color;
+            margin: 0 10px;
+          }
         }
       }
     }
