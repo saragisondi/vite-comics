@@ -16,3 +16,8 @@ a{
 img{
   max-width: 100%;
 }
+
+@mixin d-flex{
+  display: flex;
+  justify-content: space-around;
+}
