@@ -18,7 +18,7 @@ export default {
       <ul>
         <li class="h-150" v-for="(link, index) in footerTop" :key="index">
           <a href="#">
-            <img src="{{footerTop[index].img}}">
+            <img :src="link.img">
             <span>{{link.text}}</span>
           </a>
         </li>
@@ -27,22 +27,26 @@ export default {
 
     <div class="footer-middle">
 
-      <ul>
-        <li v-for="(link, index) in footerMiddle" :key="index">
+      <div class="left">
+        <div class="container-list" v-for="(link, index) in footerMiddle" :key="index">
           <h2>{{ link.title}}</h2>
-          <a href="#">{{link.links}}</a>
-        </li>
-        
-      </ul>
-      <!-- <ul>
-        <li></li>
-      </ul>
-      <ul>
-        <li></li>
-      </ul> -->
+          <ul>
+            <li v-for="(element, index) in link.links" :key="index">
+              <a href="#">{{element}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right">
+        <img src="../assets/img/dc-logo-bg.png" alt="logo">
+      </div>
+
     </div>
 
-    <div class="footer-bottom">social</div>
+    <div class="footer-bottom h-100">
+      <button>SIGN-UP NOW!</button>
+    </div>
 
   </footer>
 </template>
@@ -52,27 +56,72 @@ export default {
   @import '../scss/general.scss';
 
   footer{
-
+  
     .footer-top{
       background-color: $tertiary-color;
       @include d-flex;
+      
       ul{
         @include d-flex;
 
+        li:nth-child(4) img{
+          width: 15%;
+        }
+
+        li:last-child img{
+          width: 40%;
+        }
+
         li{
-          margin: 0 20px;
           @include d-flex;
+
+          img{
+            width:20%;
+          }
           
           span{
             text-transform:uppercase;
             color: $secondary-color;
-            margin: 0 10px;
+            margin: 0 5px;
+            border: 1px solid black;
           }
+          
         }
+
       }
+    
     }
     .footer-middle{
       background-image: url('../assets/img/footer-bg.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      @include d-flex;  
+
+      .left{
+        display: flex;
+        flex-wrap: wrap;
+
+        .container-list{
+          width: calc(100% / 3);
+        }
+
+        h2{
+          color:$secondary-color;
+        }
+
+        ul{
+          margin-top: 12px;
+          
+          li{
+            margin: 6px 0;
+  
+            a{
+              color:$quaternary-color;
+            }
+          }
+        }
+      }
+    
     }
 
     .footer-bottom{

@@ -54,30 +54,31 @@ const headerMenu = [
 const footerTop= [
   {
     href:'#',
-    img:'assets/img/buy-comics-digital-comics.png',
+    img:'./src/assets/img/buy-comics-digital-comics.png',
     text:'digital comics'
   },
   {
     href:'#',
-    img:'assets/img/buy-comics-merchandise.png',
+    img:'./src/assets/img/buy-comics-merchandise.png',
     text:'dc merchandise'
   },
   {
     href:'#',
-    img:'assets/img/buy-comics-subscriptions.png',
+    img:'./src/assets/img/buy-comics-subscriptions.png',
     text:'subscription'
   },
   {
     href:'#',
-    img:'assets/img/buy-comics-shop-locator.png',
+    img:'./src/assets/img/buy-comics-shop-locator.png',
     text:'comic shop locator'
   },
   {
     href:'#',
-    img:'assets/img/buy-dc-power-visa.svg',
+    img:'./src/assets/img/buy-dc-power-visa.svg',
     text:'dc power visa'
   },
 ]
+
 
 const footerMiddle = [
   {
@@ -90,13 +91,6 @@ const footerMiddle = [
       'Games',
       'Videos',
       'News'
-    ]
-  },
-  {
-    title:'SHOP',
-    links:[
-      'Shop DC',
-      'Shop DC Collectibles',
     ]
   },
   {
@@ -125,7 +119,13 @@ const footerMiddle = [
       'DC Power Visa',
     ]
   },
-
+  {
+    title:'SHOP',
+    links:[
+      'Shop DC',
+      'Shop DC Collectibles',
+    ]
+  },
 ]
 
 export{headerMenu,footerTop,footerMiddle}
