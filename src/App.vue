@@ -1,5 +1,6 @@
 
 <script>
+
 import Header from './components/Header.vue'
 import Main from './components/Main.vue'
 import Footer from './components/Footer.vue'
@@ -25,6 +26,6 @@ export default {
   
 </template>
 
-<style>
+<style lang="scss" scoped>
 
 </style>
