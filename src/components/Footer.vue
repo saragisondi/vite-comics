@@ -140,18 +140,28 @@ export default {
       background-color:#303030;
       @include d-flex;
 
+      button{
+        border: 2px solid $tertiary-color;
+        background-color: $septenary-color;
+        color: $secondary-color;
+        padding:10px;
+      }
       .social{
         @include d-flex;
       
         ul{
           @include d-flex;
+          margin:0 20px;
         }
 
         h2{
           color:$tertiary-color;
+          font-size:medium;
+          font-weight:bold;
         }
         img{
           margin: 0 10px;
+          width: 30px;
         }
       }
     }
