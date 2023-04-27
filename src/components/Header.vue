@@ -3,6 +3,7 @@
 import{headerMenu} from '../data/menu'
 
 export default {
+  
   data(){
     return{
       headerMenu,
@@ -14,8 +15,8 @@ export default {
 <template>
   <div>logo</div>
   <ul>
-    <li>
-      <a href="#">{{  }}</a>
+    <li v-for="(link, index) in headerMenu" :key="index">
+      <a href="#">{{link.text}}</a>
     </li>
   </ul>
 </template>
