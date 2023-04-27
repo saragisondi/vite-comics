@@ -13,7 +13,9 @@ export default {
 </script>
 
 <template>
-  <div>logo</div>
+  <div>
+    <img src="../assets/img/dc-logo.png" alt="logo">
+  </div>
   <ul>
     <li v-for="(link, index) in headerMenu" :key="index">
       <a href="#">{{link.text}}</a>
@@ -22,5 +24,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+  @use '../scss/colors.scss' as *;
+
+  a{
+    color:$primary-color;
+  }
+
 
 </style>
