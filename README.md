@@ -11,3 +11,5 @@ Creare un componente aggiuntivo per gestire la fascia azzurra con le icone
 1) Creo la cartella con PowerShell;
 2) Cancello gli stili e in App.vue creo un template, uno script e uno style;
 3) Creo un header.vue, un main.vue e un footer.vue e li importo in App.vue;
+4) Creo un menu con la lista della navbar;
+5) Faccio un ciclo for per stamparla in pagina;
