@@ -54,27 +54,27 @@ const headerMenu = [
 const footerTop= [
   {
     href:'#',
-    img:'buy-comics-digital-comics.png',
+    img:'assets/img/buy-comics-digital-comics.png',
     text:'digital comics'
   },
   {
     href:'#',
-    img:'buy-comics-merchandise.png',
+    img:'assets/img/buy-comics-merchandise.png',
     text:'dc merchandise'
   },
   {
     href:'#',
-    img:'buy-comics-subscriptions.png',
+    img:'assets/img/buy-comics-subscriptions.png',
     text:'subscription'
   },
   {
     href:'#',
-    img:'buy-comics-shop-locator.png',
+    img:'assets/img/buy-comics-shop-locator.png',
     text:'comic shop locator'
   },
   {
     href:'#',
-    img:'buy-dc-power-visa.svg',
+    img:'assets/img/buy-dc-power-visa.svg',
     text:'dc power visa'
   },
 ]

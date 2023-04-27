@@ -14,8 +14,11 @@ export default {
   <footer>
     <div class="footer-top">
       <ul>
-        <li>
-          <a href="#"></a>
+        <li v-for="(link, index) in footerTop" :key="index">
+          <a href="#">
+            <img :src= link.img>
+            <span>{{link.text}}</span>
+          </a>
         </li>
       </ul>
     </div>
@@ -29,11 +32,22 @@ export default {
 
 <style lang="scss" scoped>
   @import '../scss/colors.scss';
+  @import '../scss/general.scss';
 
   footer{
 
     .footer-top{
       background-color: $tertiary-color;
+      @include d-flex;
+      ul{
+        @include d-flex;
+
+        li, span{
+          margin: 0 20px;
+          color: $secondary-color;
+          text-transform:uppercase;
+        }
+      }
     }
     .footer-middle{
       background-image: url('../assets/img/footer-bg.jpg');
