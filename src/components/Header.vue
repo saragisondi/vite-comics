@@ -20,7 +20,7 @@ export default {
     </div>
   
     <ul>
-      <li class=" h-100" v-for="(link, index) in headerMenu" :key="index">
+      <li v-for="(link, index) in headerMenu" :key="index">
         <a href="{{link.href}}">{{link.text}}</a>
       </li>
     </ul>
@@ -36,7 +36,6 @@ export default {
   
   header{
     @include d-flex;
-
     .container-img{
       width: 70px;
     }

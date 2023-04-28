@@ -91,7 +91,7 @@ const footerMiddle = [
       'Games',
       'Videos',
       'News'
-    ]
+    ],
   },
   {
     title:'DC',

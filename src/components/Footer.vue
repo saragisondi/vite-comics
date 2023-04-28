@@ -68,10 +68,12 @@ export default {
   @import '../scss/colors.scss';
   @import '../scss/general.scss';
 
+
   footer{
   
     .footer-top{
       background-color: $tertiary-color;
+      padding: 20px;
       @include d-flex;
       
       ul{
@@ -138,11 +140,12 @@ export default {
 
     .footer-bottom{
       background-color:#303030;
+      padding: 20px;
       @include d-flex;
 
       button{
         border: 2px solid $tertiary-color;
-        background-color: $septenary-color;
+        background-color: $quinary-color;
         color: $secondary-color;
         padding:10px;
       }
