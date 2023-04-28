@@ -94,6 +94,13 @@ const footerMiddle = [
     ],
   },
   {
+    title:'SHOP',
+    links:[
+      'Shop DC',
+      'Shop DC Collectibles',
+    ]
+  },
+  {
     title:'DC',
     links:[
       'Terms Of Use',
@@ -117,13 +124,6 @@ const footerMiddle = [
       'DC Kids',
       'DC Universe',
       'DC Power Visa',
-    ]
-  },
-  {
-    title:'SHOP',
-    links:[
-      'Shop DC',
-      'Shop DC Collectibles',
     ]
   },
 ]

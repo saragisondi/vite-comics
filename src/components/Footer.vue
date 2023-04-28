@@ -31,14 +31,42 @@ export default {
     <div class="footer-middle">
 
       <div class="left">
-        <div class="container-list" v-for="(link, index) in footerMiddle" :key="index">
+        <div class="row">
+          <div class="col dc-comics" >
+            <h2>{{footerMiddle[0].title}}</h2>
+            <ul>
+              <li></li>
+            </ul>
+
+            <h2>{{footerMiddle[1].title}}</h2>
+            <ul>
+              <li></li>
+            </ul>
+          </div>
+
+          <div class="col dc">
+            <h2>{{footerMiddle[2].title}}</h2>
+            <ul>
+              <li></li>
+            </ul>
+          </div>
+
+          <div class="col sites">
+            <h2>{{footerMiddle[3].title}}</h2>
+            <ul>
+              <li></li>
+            </ul> 
+          </div>
+          
+        </div>
+        <!-- <div class="container-list" v-for="(link, index) in footerMiddle" :key="index">
           <h2>{{ link.title}}</h2>
           <ul>
             <li v-for="(element, index) in link.links" :key="index">
               <a href="#">{{element}}</a>
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
 
       <div class="right">
@@ -47,7 +75,7 @@ export default {
 
     </div>
 
-    <div class="footer-bottom h-100">
+    <div class="footer-bottom">
       <button>SIGN-UP NOW!</button>
       <div class="social">
         <h2>FOLLOW US</h2>
@@ -109,12 +137,16 @@ export default {
       background-image: url('../assets/img/footer-bg.jpg');
       background-repeat: no-repeat;
       background-size: cover;
+      padding:50px;
       @include d-flex;  
 
       .left{
         display: flex;
         flex-wrap: wrap;
 
+        .col{
+          border:1px solid red;
+        }
         .container-list{
           width: calc(100% / 3);
         }
@@ -122,18 +154,33 @@ export default {
         h2{
           color:$secondary-color;
         }
-
+        
+        
         ul{
           margin-top: 12px;
           
           li{
             margin: 6px 0;
-  
+            
             a{
               color:$quaternary-color;
             }
+
+            a:hover{
+              color:white;
+            }
           }
         }
+      }
+
+      .right{
+        
+        img{
+          position: absolute;
+          top:150px;
+          right:150px;
+        }
+
       }
     
     }
