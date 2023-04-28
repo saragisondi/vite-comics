@@ -38,12 +38,14 @@ export default {
               <h2>{{link.title}}</h2>
               <ul>
                 <li v-for="(element, index) in link.links" :key="index">
-                  {{element}}
+                  <a href="#">{{element}}</a>
                 </li>
               </ul>
               <h2>{{ link.title2 }}</h2>
               <ul>
-                <li v-for="(element, index) in link.links2" :key="index">{{ element }}</li>
+                <li v-for="(element, index) in link.links2" :key="index">
+                  <a href="#">{{ element }}</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -80,10 +82,10 @@ export default {
 
 
   footer{
-  
     .footer-top{
       background-color: $tertiary-color;
       padding: 20px;
+      position:relative;
       @include d-flex;
       
       ul{
@@ -120,11 +122,11 @@ export default {
       background-repeat: no-repeat;
       background-size: cover;
       padding:50px;
-      @include d-flex;  
-      border:1px solid white;
+      display: flex;
+      
 
       .left{
-        border:1px solid white;
+        margin-left:110px;
         .container-list{
           display: flex;
         }
@@ -169,6 +171,7 @@ export default {
     .footer-bottom{
       background-color:#303030;
       padding: 20px;
+      position:relative;
       @include d-flex;
 
       button{
