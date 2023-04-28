@@ -31,42 +31,24 @@ export default {
     <div class="footer-middle">
 
       <div class="left">
+
         <div class="row">
-          <div class="col dc-comics" >
-            <h2>{{footerMiddle[0].title}}</h2>
-            <ul>
-              <li></li>
-            </ul>
-
-            <h2>{{footerMiddle[1].title}}</h2>
-            <ul>
-              <li></li>
-            </ul>
+          <div class="container-list">
+            <div class="col" v-for="(link, index) in footerMiddle" :key="index">
+              <h2>{{link.title}}</h2>
+              <ul>
+                <li v-for="(element, index) in link.links" :key="index">
+                  {{element}}
+                </li>
+              </ul>
+              <h2>{{ link.title2 }}</h2>
+              <ul>
+                <li v-for="(element, index) in link.links2" :key="index">{{ element }}</li>
+              </ul>
+            </div>
           </div>
-
-          <div class="col dc">
-            <h2>{{footerMiddle[2].title}}</h2>
-            <ul>
-              <li></li>
-            </ul>
-          </div>
-
-          <div class="col sites">
-            <h2>{{footerMiddle[3].title}}</h2>
-            <ul>
-              <li></li>
-            </ul> 
-          </div>
-          
         </div>
-        <!-- <div class="container-list" v-for="(link, index) in footerMiddle" :key="index">
-          <h2>{{ link.title}}</h2>
-          <ul>
-            <li v-for="(element, index) in link.links" :key="index">
-              <a href="#">{{element}}</a>
-            </li>
-          </ul>
-        </div> -->
+
       </div>
 
       <div class="right">
@@ -139,15 +121,14 @@ export default {
       background-size: cover;
       padding:50px;
       @include d-flex;  
+      border:1px solid white;
 
       .left{
-        display: flex;
-        flex-wrap: wrap;
-
-        .col{
-          border:1px solid red;
-        }
+        border:1px solid white;
         .container-list{
+          display: flex;
+        }
+        .col{
           width: calc(100% / 3);
         }
 

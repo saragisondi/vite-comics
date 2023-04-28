@@ -92,14 +92,19 @@ const footerMiddle = [
       'Videos',
       'News'
     ],
-  },
-  {
-    title:'SHOP',
-    links:[
+    title2:'SHOP',
+    links2:[
       'Shop DC',
       'Shop DC Collectibles',
     ]
   },
+  // {
+  //   title:'SHOP',
+  //   links:[
+  //     'Shop DC',
+  //     'Shop DC Collectibles',
+  //   ]
+  // },
   {
     title:'DC',
     links:[
