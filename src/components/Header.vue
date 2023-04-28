@@ -36,6 +36,7 @@ export default {
   
   header{
     @include d-flex;
+    padding:10px;
     .container-img{
       width: 70px;
     }

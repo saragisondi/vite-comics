@@ -19,10 +19,11 @@ export default {
   <footer>
     <div class="footer-top">
       <ul>
-        <li class="h-150" v-for="(link, index) in footerTop" :key="index">
+        <li v-for="(link, index) in footerTop" :key="index">
           <a href="#">
             <img :src="link.img">
-            <span>{{link.text}}</span>
+            <span>
+              {{link.text}}</span>
           </a>
         </li>
       </ul>
@@ -41,7 +42,8 @@ export default {
                   <a href="#">{{element}}</a>
                 </li>
               </ul>
-              <h2>{{ link.title2 }}</h2>
+
+              <h2 class="shop">{{ link.title2 }}</h2>
               <ul>
                 <li v-for="(element, index) in link.links2" :key="index">
                   <a href="#">{{ element }}</a>
@@ -54,7 +56,10 @@ export default {
       </div>
 
       <div class="right">
-        <img src="../assets/img/dc-logo-bg.png" alt="logo">
+       
+        <div class="container-img"> 
+          <img src="../assets/img/dc-logo-bg.png" alt="logo">
+        </div>
       </div>
 
     </div>
@@ -84,23 +89,28 @@ export default {
   footer{
     .footer-top{
       background-color: $tertiary-color;
-      padding: 20px;
+      padding: 30px;
       position:relative;
       @include d-flex;
       
       ul{
         @include d-flex;
-
+        
         li:nth-child(4) img{
           width: 15%;
         }
-
+        
         li:last-child img{
-          width: 40%;
+          width: 25%;
+        }
+        
+        li:last-child a{
+          width: 180px;
         }
 
         li{
           @include d-flex;
+      
 
           img{
             width:20%;
@@ -110,6 +120,7 @@ export default {
             text-transform:uppercase;
             color: $secondary-color;
             margin: 0 5px;
+            font-size: x-small;
           }
           
         }
@@ -121,21 +132,28 @@ export default {
       background-image: url('../assets/img/footer-bg.jpg');
       background-repeat: no-repeat;
       background-size: cover;
-      padding:50px;
       display: flex;
       
-
+      
       .left{
-        margin-left:110px;
+        margin-left:200px;
+        padding:30px;
         .container-list{
           display: flex;
         }
         .col{
           width: calc(100% / 3);
-        }
+          font-size:small;
+          margin:0 5px;
+          
+          .shop{
+            margin-top:20px;
+              }
+          }
 
         h2{
           color:$secondary-color;
+          font-size: 15px;
         }
         
         
@@ -157,13 +175,23 @@ export default {
       }
 
       .right{
-        
-        img{
-          position: absolute;
-          top:150px;
-          right:150px;
-        }
+        width: 30%;
+        height: 450px;
+        position:absolute;
+        top:170px;
+        right:320px;
 
+        .container-img{
+          width: 100%;
+          height: 100%;
+
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+          
       }
     
     }
