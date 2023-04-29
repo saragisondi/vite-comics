@@ -1,8 +1,10 @@
 
 <script>
+/************IMPORT***********************/
 import {footerTop} from '../data/menu'
 import{footerMiddle} from'../data/menu'
 import{footerBottom} from '../data/menu'
+
 
 export default {
   data(){
@@ -15,9 +17,16 @@ export default {
 }
 </script>
 
+
+
+
+<!-- HTML -->
 <template>
+
   <footer>
+    <!-- FOOTER TOP -->
     <div class="footer-top">
+
       <ul>
         <li v-for="(link, index) in footerTop" :key="index">
           <a href="#">
@@ -27,10 +36,13 @@ export default {
           </a>
         </li>
       </ul>
+
     </div>
 
+    <!-- FOOTER MIDDLE -->
     <div class="footer-middle">
 
+      <!-- left-->
       <div class="left">
 
         <div class="row">
@@ -55,8 +67,9 @@ export default {
 
       </div>
 
+      <!-- right -->
       <div class="right">
-       
+      
         <div class="container-img"> 
           <img src="../assets/img/dc-logo-bg.png" alt="logo">
         </div>
@@ -64,6 +77,8 @@ export default {
 
     </div>
 
+
+    <!-- FOOTER BOTTOM -->
     <div class="footer-bottom">
       <button>SIGN-UP NOW!</button>
       <div class="social">
@@ -80,21 +95,29 @@ export default {
 
   </footer>
 </template>
+<!-- HTML / -->
 
+
+
+
+<!-- SCSS -->
 <style lang="scss" scoped>
+  // import
   @import '../scss/colors.scss';
   @import '../scss/general.scss';
+  @import '../scss/mixin.scss';
 
 
   footer{
+    // FOOTER TOP
     .footer-top{
       background-color: $tertiary-color;
       padding: 30px;
       position:relative;
-      @include d-flex;
+      @include space-around;
       
       ul{
-        @include d-flex;
+        @include space-around;
         
         li:nth-child(4) img{
           width: 15%;
@@ -109,7 +132,7 @@ export default {
         }
 
         li{
-          @include d-flex;
+          @include space-around;
       
 
           img{
@@ -128,13 +151,14 @@ export default {
       }
     
     }
+
+    // FOOTER MIDDLE
     .footer-middle{
       background-image: url('../assets/img/footer-bg.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
+      @include background-img;
       display: flex;
       
-      
+      // left
       .left{
         margin-left:200px;
         padding:30px;
@@ -173,7 +197,7 @@ export default {
           }
         }
       }
-
+      // right
       .right{
         width: 30%;
         height: 450px;
@@ -184,23 +208,18 @@ export default {
         .container-img{
           width: 100%;
           height: 100%;
-
-          img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
         }
           
       }
     
     }
 
+    // FOOTER BOTTOM
     .footer-bottom{
       background-color:#303030;
       padding: 20px;
       position:relative;
-      @include d-flex;
+      @include space-around;
 
       button{
         border: 2px solid $tertiary-color;
@@ -209,10 +228,10 @@ export default {
         padding:10px;
       }
       .social{
-        @include d-flex;
+        @include space-around;
       
         ul{
-          @include d-flex;
+          @include space-around;
           margin:0 20px;
         }
 

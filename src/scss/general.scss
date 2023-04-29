@@ -19,23 +19,7 @@ img{
   object-fit: cover;
 }
 
-@mixin d-flex{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-// .h-100{
-//   height:100px;
-// }
-
-
-// .h-150{
-//   height:150px;
-// }
-
-
-
 .active{
-  border-bottom: 1 px solid #0281F8;
+  color:  #0281F8;
+  border-bottom:3px solid #0281F8;
 }

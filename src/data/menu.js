@@ -7,7 +7,7 @@ const headerMenu = [
   {
     href:'#',
     text: 'comics',
-    isActive: false
+    isActive: true
   },
   {
     href:'#',
@@ -98,13 +98,6 @@ const footerMiddle = [
       'Shop DC Collectibles',
     ]
   },
-  // {
-  //   title:'SHOP',
-  //   links:[
-  //     'Shop DC',
-  //     'Shop DC Collectibles',
-  //   ]
-  // },
   {
     title:'DC',
     links:[
