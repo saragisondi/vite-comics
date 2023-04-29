@@ -4,7 +4,7 @@
 import{headerMenu} from '../data/menu'
 
 export default {
-  
+  name:'Header',
   data(){
     return{
       headerMenu,

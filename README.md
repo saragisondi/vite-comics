@@ -13,4 +13,6 @@ Creare un componente aggiuntivo per gestire la fascia azzurra con le icone
 3) Creo un header.vue, un main.vue e un footer.vue e li importo in App.vue;
 4) Creo un menu con la lista delle navbar;
 5) Faccio un ciclo for per stamparle in pagina;
-6)
+6) Creo un contenitore per il jumbotron e metto lo metto come background;
+7) Creo un contenitore per le cards;
+8) Importo il json e le cards nel main;

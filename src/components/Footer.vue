@@ -7,6 +7,7 @@ import{footerBottom} from '../data/menu'
 
 
 export default {
+  name:'Footer',
   data(){
     return{
       footerTop,
@@ -113,18 +114,17 @@ export default {
     .footer-top{
       background-color: $tertiary-color;
       padding: 30px;
-      position:relative;
       @include space-around;
       
       ul{
         @include space-around;
         
         li:nth-child(4) img{
-          width: 15%;
+          width: 20%;
         }
         
         li:last-child img{
-          width: 25%;
+          width: 30%;
         }
         
         li:last-child a{
@@ -136,14 +136,14 @@ export default {
       
 
           img{
-            width:20%;
+            width:25%;
           }
           
           span{
             text-transform:uppercase;
             color: $secondary-color;
             margin: 0 5px;
-            font-size: x-small;
+            font-size: 12px;
           }
           
         }
@@ -157,10 +157,10 @@ export default {
       background-image: url('../assets/img/footer-bg.jpg');
       @include background-img;
       display: flex;
+      justify-content: space-evenly;
       
       // left
       .left{
-        margin-left:200px;
         padding:30px;
         .container-list{
           display: flex;
@@ -200,10 +200,8 @@ export default {
       // right
       .right{
         width: 30%;
-        height: 450px;
-        position:absolute;
-        top:650px;
-        right:320px;
+        height: 350px;
+
 
         .container-img{
           width: 100%;
