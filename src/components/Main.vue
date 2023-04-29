@@ -32,9 +32,9 @@ export default {
     </div>
     <div class="jumbotron"></div>
 
-   
-<!-- 
-      <span>CURRENT SERIES</span> -->
+    <div class="current-series">
+      <span>CURRENT SERIES</span>
+    </div>
       
       <div class="container-cards">
 
@@ -82,6 +82,15 @@ export default {
       height:330px;
     }
 
+    .current-series{
+      position: relative;
+      
+      span{
+        position: absolute;
+        left:260px;
+        top:-15px;
+      }
+    }
     .container-cards{
       width: 65%;
       height:500px;
