@@ -32,21 +32,26 @@ export default {
     </div>
     <div class="jumbotron"></div>
 
-    <div class="container-cards">
+   
 <!-- 
       <span>CURRENT SERIES</span> -->
       
-      
+      <div class="container-cards">
+
+        <Cards
+        v-for="(card,index) in DcComics" 
+        :key="index"
+        :thumb="card.thumb"
+        :series="card.series"
+        />
+  
+  
+      </div>
+  
       
       <!-- <button>LOAD MORE</button> -->
-      <!-- img
-        nomeprodotto -->
         
-        <Cards 
-        
-        />
-        
-    </div>
+    
 
   </main>
 
@@ -76,18 +81,18 @@ export default {
     }
 
     .container-cards{
-      width: 70%;
+      width: 65%;
       height:500px;
       margin:0 auto;
       @include d-flex;
       justify-content: space-between;
       flex-wrap: wrap;
-
-      span{
-        background-color: $tertiary-color;
-        padding: 5px 15px;
-        margin-bottom:20px
-      }
+    }
+  
+    span{
+      background-color: $tertiary-color;
+      padding: 5px 15px;
+      margin-bottom:20px
     }
   }
 </style>

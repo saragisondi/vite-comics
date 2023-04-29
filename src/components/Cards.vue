@@ -12,71 +12,47 @@ export default {
 </script>
 
 <template>
-  
-  
-  <div class="cards">
-    <img :src="thumb" :alt="series">
-    <h1>{{ series }}</h1>
-  </div>
 
-<!-- 
-  <div class="cards">
-    <img :src="thumb" :alt="series">
-    <h1>{{ series }}</h1>
-  </div>
-  <div class="cards">
-    <img :src="thumb" :alt="series">
-    <h1>{{ series }}</h1>
-  </div>
-  <div class="cards">
-    <img :src="thumb" :alt="series">
-    <h1>{{ series }}</h1>
-  </div>
-  <div class="cards">
-    <img :src="thumb" :alt="series">
-    <h1>{{ series }}</h1>
-  </div>
-  <div class="cards">
-    <img :src="thumb" :alt="series">
-    <h1>{{ series }}</h1>
-  </div><div class="cards">
-    <img :src="thumb" :alt="series">
-    <h1>{{ series }}</h1>
-  </div>
-  <div class="cards">
-    <img :src="thumb" :alt="series">
-    <h1>{{ series }}</h1>
-  </div>
-  <div class="cards">
-    <img :src="thumb" :alt="series">
-    <h1>{{ series }}</h1>
-  </div>
-  <div class="cards">
-    <img :src="thumb" :alt="series">
-    <h1>{{ series }}</h1>
-  </div>
-  <div class="cards">
-    <img :src="thumb" :alt="series">
-    <h1>{{ series }}</h1>
-  </div>
-  <div class="cards">
-    <img :src="thumb" :alt="series">
-    <h1>{{ series }}</h1>
-  </div> -->
+    <div class="cards">
+      <div class="container-img">
+        <img :src="thumb" :alt="series">
+      </div>
 
+      <div class="container-title">
+        <div>{{series}}</div>
+      </div>
+    </div>
+  
 
 </template>
 
 <style lang="scss" scoped>
 @use '../scss/mixin.scss' as *;
 
-.cards{
-  border:1px solid white;
-  width: calc(90% / 6);
-  height:170px;
-  @include d-flex;
-  margin-top:50px;
-}
+
+      .cards{
+        width: calc(90% / 6);
+        height:35%;
+        margin-top:50px;
+        
+        .container-img{
+          width: 100%;
+          height:80%;
+          
+          
+          img{
+            width: 100%;
+            height:100%;
+            object-fit: cover;
+            object-position: top;
+            
+          }
+        }
+
+        div{
+          font-size: small;
+        }
+      }
 /* word-wrap:break-word */
 
 </style>
