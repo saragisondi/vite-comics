@@ -16,3 +16,6 @@ Creare un componente aggiuntivo per gestire la fascia azzurra con le icone
 6) Creo un contenitore per il jumbotron e metto lo metto come background;
 7) Creo un contenitore per le cards;
 8) Importo il json e le cards nel main;
+9) Faccio un props per prendere dal json solo i due dati che mi interessano;
+10) Faccio un ciclo for per stampare le card in pagina;
+11) Faccio i bottoni;

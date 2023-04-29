@@ -47,9 +47,11 @@ export default {
   
   
       </div>
-  
+
+      <div class="container-button">
+        <button>LOAD MORE</button>
+      </div>
       
-      <!-- <button>LOAD MORE</button> -->
         
     
 
@@ -93,6 +95,23 @@ export default {
       background-color: $tertiary-color;
       padding: 5px 15px;
       margin-bottom:20px
+    }
+
+    .container-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+
+    button{
+      padding:5px 30px;
+      border:none;
+      font-size: x-small;
+      font-weight: bold;
+      background-color: $tertiary-color;
+      color:$secondary-color;
+      cursor: pointer;
+    }
     }
   }
 </style>
