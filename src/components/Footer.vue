@@ -202,7 +202,7 @@ export default {
         width: 30%;
         height: 450px;
         position:absolute;
-        top:170px;
+        top:650px;
         right:320px;
 
         .container-img{
